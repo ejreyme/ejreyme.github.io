@@ -1,13 +1,64 @@
-<html lang="en">
+<html lang="en" id="home">
     <head>
+        <title>Emmanuel J. Reyme - CV</title>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Emmanuel J. Reyme</title>
-        <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js" integrity="sha384-Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Emmanuel J. Reyme - CV">
+        <meta name="author" content="Emmanuel J. Reyme">
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js" integrity="sha384-Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm" crossorigin="anonymous"></script>
     </head>
-    <body>
-        <h1>Hello, world!</h1>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <body class="d-flex flex-column h-100" hx-get="pages/landing.html" hx-target="#content" hx-swap="outerHTML" hx-trigger="load">
+
+    <main class="flex-shrink-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+            <div class="container px-5">
+                <a class="navbar-brand"
+                   href="index.html"
+                   hx-get="index.html"
+                   hx-swap="outerHTML"
+                   hx-target="html"
+                   hx-push-url="true">
+                    <span class="fw-bolder text-primary">@emmanueljreyme</span></a>
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                        <li class="nav-item"><a href="/#home" hx-get="pages/home.html" hx-target="#content" hx-swap="outerHTML" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="/#cv" hx-get="pages/cv.html" hx-target="#content" hx-swap="innerHTML" class="nav-link">CV</a></li>
+                        <li class="nav-item"><a href="/#project" hx-get="pages/project.html" hx-target="#content" hx-swap="outerHTML" class="nav-link">Projects</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="content">
+            <!--load htmx content here-->
+        </div>
+    </main>
+
+    <footer class="bg-white py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0">Copyright © Emmanuel J. Reyme 2025. All rights reserved.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
     </body>
 </html>
