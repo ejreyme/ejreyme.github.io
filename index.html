@@ -19,13 +19,9 @@
     <main class="flex-shrink-0">
         <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
             <div class="container px-5">
-                <a class="navbar-brand"
-                   href="index.html"
-                   hx-get="index.html"
-                   hx-swap="outerHTML"
-                   hx-target="html"
-                   hx-push-url="true">
-                    <span class="fw-bolder text-primary">@emmanueljreyme</span></a>
+                <a class="navbar-brand" href="/" hx-get="pages/landing.html" hx-target="#content" hx-swap="outerHTML">
+                    <span class="fw-bolder text-primary">@emmanueljreyme</span>
+                </a>
                 <button class="navbar-toggler"
                         type="button"
                         data-bs-toggle="collapse"
@@ -52,7 +48,7 @@
 
     <footer class="bg-white py-4 mt-auto">
         <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+            <div class="row align-items-center justify-content-center flex-column flex-sm-row">
                 <div class="col-auto">
                     <div class="small m-0">Copyright © Emmanuel J. Reyme 2025. All rights reserved.</div>
                 </div>
